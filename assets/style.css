@@ -1,3 +1,7 @@
+#carousel-item {
+	width: 1440px;
+	height: 665px;
+}
 body {
 	max-width: 1920px;
 	margin: auto;
@@ -40,6 +44,7 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
 }
 
 #about {
@@ -68,7 +73,8 @@ body {
 }
 
 .picture img {
-	width: 100%;
+	width: 419px;
+	height: 418px;
 
 }
 #about-me {
@@ -100,13 +106,14 @@ body {
 .gallery .nav {
 	justify-content: center;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link:active, .nav-pills .show > .nav-link { /* .active au lieu de :active sur nav-link */
 	color: #fff;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
@@ -121,8 +128,8 @@ body {
 }
 .gallery-item {
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	width: 440px;
+	height: 440px;
 	object-fit: cover;
 	padding: .5em;
 }

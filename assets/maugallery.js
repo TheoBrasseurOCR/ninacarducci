@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
   $.fn.mauGallery = function(options) {
     var options = $.extend($.fn.mauGallery.defaults, options);
     var tagsCollection = [];
@@ -153,6 +153,7 @@
           index = i ;
         }
       });
+      index = (index - 1) % imagesCollection.length; // ajout de la variable index qui actionne la flèche gauche de la modale
       next =
         imagesCollection[index] ||
         imagesCollection[imagesCollection.length - 1];
@@ -192,6 +193,7 @@
           index = i;
         }
       });
+      index = (index + 1) % imagesCollection.length; // ajout de la variable index qui actionne la flèche droite de la modale
       next = imagesCollection[index] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -240,7 +242,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active active-tag");  // remplacement de active-tag par active active-tag pour changement couleur filtres
 
       var tag = $(this).data("images-toggle");
 

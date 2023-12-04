@@ -93,7 +93,7 @@ body {
 	font-size: 30px;
 }
 .about-me__introduction {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
@@ -151,20 +151,20 @@ body {
 }
 
 .quote {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Spectral';
 	font-style: italic;
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Spectral';
 	font-style: italic;
 	font-weight: 300;
 
 }
 .quote__author {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Spectral';
 	font-weight: 800;
 	font-size: 22px;
 }
